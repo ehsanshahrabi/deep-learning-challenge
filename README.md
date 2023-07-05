@@ -9,7 +9,7 @@ The data set provided includes over 34,000 organizations that have received fund
 
 ### Data Preprocessing
 
-1. What variable(s) are the target(s) for your model?
+#### 1. What variable(s) are the target(s) for your model?
 
 The target variable for the model is 'IS_SUCCESSFUL', which indicates whether or not the charity application was successful.
 
