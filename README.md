@@ -13,11 +13,11 @@ The data set provided includes over 34,000 organizations that have received fund
 
 The target variable for the model is 'IS_SUCCESSFUL', which indicates whether or not the charity application was successful.
 
-2. What variable(s) are the features for your model?
+#### 2. What variable(s) are the features for your model?
    
 The feature variables for the model include 'APPLICATION_TYPE', 'AFFILIATION', 'CLASSIFICATION', 'USE_CASE', 'ORGANIZATION', 'STATUS', 'INCOME_AMT', 'SPECIAL_CONSIDERATIONS', and 'ASK_AMT'.
 
-3. What variable(s) should be removed from the input data because they are neither targets nor features?
+#### 3. What variable(s) should be removed from the input data because they are neither targets nor features?
 
 Variables 'EIN' and 'NAME' were removed from the input data as they are neither targets nor features. They are simply identifiers and do not provide meaningful information for the model.
 
