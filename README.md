@@ -23,7 +23,7 @@ Variables 'EIN' and 'NAME' were removed from the input data as they are neither 
 
 ### Compiling, Training, and Evaluating the Model
 
-4. How many neurons, layers, and activation functions did you select for your neural network model, and why?
+#### 4. How many neurons, layers, and activation functions did you select for your neural network model, and why?
 
 Original Model:
 
@@ -39,7 +39,7 @@ Model 3: This model had two layers with 80 and 30 neurons respectively, just lik
 
 Model 4: The structure of this model was identical to the original model, with two layers containing 80 and 30 neurons. However, the model employed 'SGD' as the optimizer with a learning rate of 0.01, unlike the original model which used 'adam'. Stochastic Gradient Descent (SGD) was used to see if the slower, more robust nature of this optimizer could lead to better performance.
 
-5. Were you able to achieve the target model performance?
+#### 5. Were you able to achieve the target model performance?
 
 No, the model did not achieve the target performance. The original model achieved an accuracy of ~72.7%.
 
