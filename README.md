@@ -24,11 +24,11 @@ Variables 'EIN' and 'NAME' were removed from the input data as they are neither 
 
 #### 4. How many neurons, layers, and activation functions did you select for your neural network model, and why?
 
-Original Model:
+Original Model(Starter_Code.ipynb):
 
 The original model contained two layers with 80 and 30 neurons respectively. The activation function used in these layers was 'ReLU'. 'ReLU' was selected as the activation function due to its efficient computation and because it helps mitigate the vanishing gradient problem, which can hinder the learning process in deep neural networks. The output layer used 'sigmoid' as the activation function because this is a binary classification problem, and 'sigmoid' is suitable for such problems as it outputs probabilities between 0 and 1.
 
-Optimized Models:
+Optimized Models(AlphabetSoupCharity_Optimization.ipynb):
 
 Optimization  1: This model retained the original structure of two layers but changed the activation functions. The activation function of the first hidden layer was switched to 'tanh', and the second hidden layer used 'LeakyReLU'. 'tanh' was used because it can sometimes perform better in practice compared to 'ReLU' by mapping negative inputs to negative outputs. 'LeakyReLU' was selected to avoid dead neurons, which can occur with 'ReLU' if negative inputs result in a 0 output.
 
