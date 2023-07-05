@@ -2,8 +2,7 @@
 
 ## Overview of the Analysis
 
-The purpose of this analysis is to create a binary classifier that is capable of predicting whether applicants will be successful if funded by Alphabet Soup. 
-The data set provided includes over 34,000 organizations that have received funding from Alphabet Soup over the years.
+This analysis aims to help Alphabet Soup, a non-profit organization, predict which projects will succeed if funded. By leveraging historical data and deep learning techniques, the goal is to create a model that can efficiently classify applications based on their likelihood of success. This would aid Alphabet Soup in making impactful and effective funding decisions.
 
 ## Results
 
