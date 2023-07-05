@@ -31,25 +31,29 @@ The original model contained two layers with 80 and 30 neurons respectively. The
 
 Optimized Models:
 
-Model 1: This model retained the original structure of two layers but changed the activation functions. The activation function of the first hidden layer was switched to 'tanh', and the second hidden layer used 'LeakyReLU'. 'tanh' was used because it can sometimes perform better in practice compared to 'ReLU' by mapping negative inputs to negative outputs. 'LeakyReLU' was selected to avoid dead neurons, which can occur with 'ReLU' if negative inputs result in a 0 output.
+Optimization  1: This model retained the original structure of two layers but changed the activation functions. The activation function of the first hidden layer was switched to 'tanh', and the second hidden layer used 'LeakyReLU'. 'tanh' was used because it can sometimes perform better in practice compared to 'ReLU' by mapping negative inputs to negative outputs. 'LeakyReLU' was selected to avoid dead neurons, which can occur with 'ReLU' if negative inputs result in a 0 output.
 
-Model 2: This model had a more complex architecture with four hidden layers containing 100, 50, 25, and 10 neurons respectively. The additional layers were added in an attempt to capture more complex patterns in the data. The 'ReLU' activation function was used for all the hidden layers due to its efficient computation and its ability to handle the vanishing gradient problem.
+Optimization  2: This model had a more complex architecture with four hidden layers containing 100, 50, 25, and 10 neurons respectively. The additional layers were added in an attempt to capture more complex patterns in the data. The 'ReLU' activation function was used for all the hidden layers due to its efficient computation and its ability to handle the vanishing gradient problem.
 
-Model 3: This model had two layers with 80 and 30 neurons respectively, just like the original model. However, it introduced dropout layers for regularization to prevent overfitting. The dropout layers randomly set a fraction of input units to 0 at each update during training time, which helps prevent overfitting. The 'ReLU' activation function was used for the hidden layers.
+Optimization  3: This model had two layers with 80 and 30 neurons respectively, just like the original model. However, it introduced dropout layers for regularization to prevent overfitting. The dropout layers randomly set a fraction of input units to 0 at each update during training time, which helps prevent overfitting. The 'ReLU' activation function was used for the hidden layers.
 
-Model 4: The structure of this model was identical to the original model, with two layers containing 80 and 30 neurons. However, the model employed 'SGD' as the optimizer with a learning rate of 0.01, unlike the original model which used 'adam'. Stochastic Gradient Descent (SGD) was used to see if the slower, more robust nature of this optimizer could lead to better performance.
+Optimization  4: The structure of this model was identical to the original model, with two layers containing 80 and 30 neurons. However, the model employed 'SGD' as the optimizer with a learning rate of 0.01, unlike the original model which used 'adam'. Stochastic Gradient Descent (SGD) was used to see if the slower, more robust nature of this optimizer could lead to better performance.
 
 #### 5. Were you able to achieve the target model performance?
 
 No, the model did not achieve the target performance. The original model achieved an accuracy of ~72.7%.
 
-6. What steps did you take in your attempts to increase model performance?
+#### 6. What steps did you take in your attempts to increase model performance?
 
 Several steps were taken to increase the model performance:
 
-Model 1: The activation functions were altered, changing the first hidden layer to "tanh" and the second to "LeakyReLU".
+Optimization  1: The activation functions were altered, changing the first hidden layer to "tanh" and the second to "LeakyReLU".
 
-Model 2: More layers and neurons were added to the model. The new model included four hidden layers with 100, 50, 25, and 10 neurons respectively.
+Optimization  2: More layers and neurons were added to the model. The new model included four hidden layers with 100, 50, 25, and 10 neurons respectively.
+
+Optimization  3: Dropout layers were added to prevent overfitting.
+
+Optimization  4: The optimizer was changed from 'adam' to 'SGD' with a learning rate of 0.01.
 
 ## Summary
 
