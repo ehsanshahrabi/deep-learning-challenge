@@ -57,7 +57,7 @@ Optimization  4: The optimizer was changed from 'adam' to 'SGD' with a learning 
 
 ## Summary
 
-In my analysis of the Alphabet Soup Charity data, I implemented a deep learning model that achieved a satisfactory accuracy of about 72.5% - 72.7%. Despite several optimization attempts, I could not significantly improve the model's performance.
+The deep learning model designed for this task did not achieve the targeted accuracy of 75%, reaching approximately 72.7% at its best. The model was subjected to multiple optimization attempts, which included changing the activation function, increasing the number of layers and neurons, introducing dropout for regularization, and changing the optimizer.
 
 This led me to consider other machine learning methods, such as Random Forest or Gradient Boosting, for this binary classification task. Alternatively, refining the feature selection process or applying different dimensionality reduction techniques could help optimize the model.
 
