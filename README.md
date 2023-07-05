@@ -63,7 +63,3 @@ This led me to consider other machine learning methods, such as Random Forest or
 
 If we persist with deep learning, we could explore extensive hyperparameter tuning, various learning rate schedules, or more complex architectures like convolutional or recurrent neural networks. The key learning point is that model selection should always align with the data, task, and available resources. There isn't a one-size-fits-all approach. Trial and error is an inherent part of finding the best solution.
 
-Model 3: Dropout layers were added to prevent overfitting.
-
-Model 4: The optimizer was changed from 'adam' to 'SGD' with a learning rate of 0.01.
-
