@@ -58,7 +58,23 @@ Optimization  4: The optimizer was changed from 'adam' to 'SGD' with a learning 
 
 The deep learning model designed for this task did not achieve the targeted accuracy of 75%, reaching approximately 72.7% at its best. The model was subjected to multiple optimization attempts, which included changing the activation function, increasing the number of layers and neurons, introducing dropout for regularization, and changing the optimizer.
 
-This led me to consider other machine learning methods, such as Random Forest or Gradient Boosting, for this binary classification task. Alternatively, refining the feature selection process or applying different dimensionality reduction techniques could help optimize the model.
+Despite falling short of the target, the achieved accuracy of 72.7% is still respectable, and the model has shown considerable potential. It can provide Alphabet Soup with a strong basis for making funding decisions, although there is certainly room for improvement.
 
-If we persist with deep learning, we could explore extensive hyperparameter tuning, various learning rate schedules, or more complex architectures like convolutional or recurrent neural networks. The key learning point is that model selection should always align with the data, task, and available resources. There isn't a one-size-fits-all approach. Trial and error is an inherent part of finding the best solution.
+## Different model to solve the same problem:
+
+The Gradient Boosting Machines (GBM), such as XGBoost and LightGBM, could potentially be a better choice for certain tasks because of several key reasons:
+
+Performance: GBMs, including XGBoost and LightGBM, are known for their superior performance. They are frequently winners of machine learning competitions because of their high predictive accuracy. They create a strong predictive model by building an ensemble of weak prediction models, typically decision trees.
+
+Efficiency: GBMs are computationally efficient. XGBoost, in particular, is designed for speed and performance. It implements a more regularized form of boosting which prevents overfitting and provides better performance. Similarly, LightGBM uses a novel technique of Gradient-based One-Side Sampling (GOSS) to filter out the data instances for finding a split value, making it faster than other GBM implementations.
+
+Flexibility: GBMs can handle a wide variety of data types -- continuous, categorical, binary, etc., and don't require pre-processing like scaling or normalization. They can also handle missing values.
+
+Interpretability: While deep learning models can be viewed as black boxes, GBMs provide relative feature importance, which can help in understanding which features are driving the predictions.
+
+Regularization: XGBoost includes L1 (Lasso Regression) and L2 (Ridge Regression) regularization which prevents the model from overfitting. This makes XGBoost more robust to outliers and variance in the data as compared to other GBMs.
+
+Handling Imbalanced Data: XGBoost can handle imbalanced datasets by adjusting the 'scale_pos_weight' parameter.
+
+
 
